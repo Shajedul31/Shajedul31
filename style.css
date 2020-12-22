@@ -4,17 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
-    
-}
-
+}     
 html,body{
     background: url(assets/back_wall.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;   
-}      
-
+} 
 .clearfix::after{
     content: '';
     display: block;
@@ -95,12 +92,12 @@ body::-webkit-scrollbar {
                   
   }
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track{
     background: #1b1b1b;
     box-shadow: inset 0 0 6px cyan;       
-  }
+}
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb{
     background-color: #003333;    
     border-radius: 2px;       
     box-sizing: border-box;
