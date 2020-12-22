@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+html,body{
+    background: url(assets/back_wall.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+}      
+
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+/*Loader Screen*/
+#contain{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    z-index: 999999;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+#contain .mid{
+    width: 9rem;
+    height: 9rem;
+    display: grid;
+    place-items: center;
+}
+#contain .rot-big{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 3px white solid;
+    border-left: 3px grey solid;
+    border-right: 3px grey solid;
+    position: absolute;
+    animation: rot1 2s linear infinite;
+}
+#contain .rot{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 3px white solid;
+    border-top: 3px  grey solid;
+    border-bottom: 3px grey solid;
+    position: absolute;
+    animation: rot2 2s linear infinite;
+}
+@font-face{
+    font-family: robotic-font;
+    src: url(assets/robotic.ttf);
+}
+#contain h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: robotic-font;
+    font-size: 15px;
+    color: grey;
+}
+@keyframes rot1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rot2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/*loading screen ends*/
+/*Scrollbar Starts*/
+body::-webkit-scrollbar {
+    width: 10px; 
+                  
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1b1b1b;
+    box-shadow: inset 0 0 6px cyan;       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #003333;    
+    border-radius: 2px;       
+    box-sizing: border-box;
+    outline: 1px solid cyan ;
+}
+/*Scrollbar Ends*/
+/*Menu bar Starts*/
+nav{
+    background: #1b1b1b;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;     
+    width: 100%; 
+}
+nav .logo{
+    float: left;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+nav .logo img{
+    width: 60px;
+    height: 60px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    display: inline block;
+    margin: 0 5px;
+    background: #1b1b1b;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 16px;
+    padding: 8px 15px;
+}
+nav ul li a:hover{
+    box-shadow: 0 0 5px #33ffff;
+    border-radius: 4px;
+    color: cyan;
+    background-color: #1b1b1b;
+}
+nav ul .current{
+    background-color: cyan;
+    border-radius: 4px;
+}
+nav .search-box{
+    float: left;
+    padding: 5px 10px;
+    border: 2px solid cyan;
+    margin-top: 14px;
+    border-radius: 42px;
+    height: 40px;
+    box-sizing: border-box;
+}
+nav .search-txt{
+    background-color: #1b1b1b;
+    border: none;
+    font-size: 13px;
+    width: 0px;
+    transition: 0.4s;
+}
+nav .search-btn{
+    color: cyan;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+nav .search-box:hover{
+    box-shadow: 0 0 5px cyan;
+}
+nav .search-box:hover > .search-txt{
+    width: 100px;
+    transition: 0.4s;
+}
+nav input[type = text]:focus{
+    outline: none;
+}
+/*Menubar ends*/
+footer{
+    background-color: #1b1b1b;
+    padding: 5% 10% ;
+    align-items: center;
+    padding-bottom: 50px;
+    color: cyan;
+}
+footer div .col{
+    float: left;
+    padding-left: 200px;
+}
+footer div .col ul{
+    list-style: none;
+}
+footer div .col a{
+    text-decoration: underline;
+    color: cyan;
+}
+footer .dev{
+    font-size: 13px;
+    text-align: center;
+    
+}
+footer div .col a:hover{
+    color: #E52926;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&S</title>
+</head>
+<body onload="loadFunction()">
+    <div id="contain">
+        <div class="mid">
+            <div class="rot-big"></div>
+            <div class="rot"></div>
+            <h2>Loading</h2>
+        </div>
+    </div>
+    <script>
+        var preloader = document.getElementById('contain');
+        function loadFunction(){
+            preloader.style.visibility = 'hidden';
+        }
+    </script>
+    <nav class="clearfix">
+        <div class="logo"><a href="home.html"><img src="favicon.ico" alt="M&S"></a></div>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li><a class="current" href="education.html"><i class='fas fa-graduation-cap'></i> Education</a></li>
+            <li><a href="skills.html"><i class="fa fa-cogs" aria-hidden="true"></i> Skills</a></li>
+            <li><a href="social.html"><i class="fas fa-users"></i> Social</a></li>
+            <div class="search-box">
+                <input class="search-txt" type="text" placeholder="Type to search">
+                <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+            </div>
+        </ul> 
+    </nav>
+    <br><br><br>
+</body>
+<footer >
+    <div class="clearfix">
+        <div class="col">
+        <h3>Arafat Ahmed Mahin</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/arafatahmed.mahin.9" target="blank">Facebook</a></li>
+            <li>Email: ahmedarafat867@gmail.com</li>
+            <li>Contact: 01759566865</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h3>Shajedul Islam Chowdhury</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/shajedul.pranto.35/" target="blank">Facebook</a></li>
+            <li>Email: prantopranto2911@gmail.com</li>
+            <li>Contact: 01732524507</li>
+        </ul>
+        </div>
+    </div>
+    <br><br>
+    
+    <div class="dev"><i class="fas fa-hammer"></i> Developed by Arafat Ahmed Mahin and Shajedul Islam Pranto</div>
+</footer>
+</html>
