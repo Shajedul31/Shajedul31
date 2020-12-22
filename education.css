@@ -22,6 +22,9 @@ section{
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.2) ;
 }
+section h2{
+    color: aqua;
+}
 section .basic-info{
     width: 100%;
     margin: 20px ;
@@ -45,7 +48,7 @@ section .basic-info ul{
     list-style: none;
     line-height: 30px;
     padding-top: 30px;
-    color:cyan;
+    color:#53F07B;
 }
 section #res{
 }
@@ -59,7 +62,7 @@ section .res-col{
     padding: 20px;
     display: grid;
     place-items: center;
-    color: cyan;
+    color: #53F07B;
 }
 section .res-col:nth-child(2){
     float: right;
@@ -77,5 +80,5 @@ section #res-mid{
     box-sizing: border-box;
     box-shadow: 0 0 10px #003333;
     padding: 20px;
-    color: cyan;
+    color: #53F07B;
 }
