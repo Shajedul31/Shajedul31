@@ -39,6 +39,8 @@ nav{
     border:2px solid #66ffff;
     transition: 0.5s;
     width: 100%;
+    height: 70px;
+    
 }
 .container .skills:hover
 {
@@ -58,16 +60,17 @@ nav{
 .container .skills .Name
 {
     position: relative;
-    width: 110px;
+    width: 60px;
     text-align: right;
     color: #66ffff;
-    margin-top: -2px;
+    margin-top: -4px;
     text-transform: uppercase;
+    padding-top: px;
 }
 .container .skills .Value
 {
     position: relative;
-    width: 40px;
+    width: 30px;
     text-align: left;
     color: #66ffff;
     margin-top: -2px;
@@ -96,6 +99,7 @@ nav{
     box-shadow: inset 0 0 2px #000;
     animation: animate 2s ease-in-out
     forwards;
+    
 }
 .container .skills .percent .progress2
 {
