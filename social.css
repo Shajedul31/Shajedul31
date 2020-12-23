@@ -1,3 +1,16 @@
+.con{
+    display: grid;
+    place-items: center;
+    margin: 10% 20px;
+    text-transform: capitalize;
+    border-radius: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px cyan;
+    background-color: #1b1b1b;
+}
+.con h2{
+    color: cyan;
+}
 section{
     margin: 10% 20px 0px;
     background-color: rgba(0, 0, 0, 0.2);
