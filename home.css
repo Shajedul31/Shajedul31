@@ -32,3 +32,33 @@
     color: #1affa3;
     font-size: x-large;
 }
+.intro-logo{
+    display: grid;
+    place-items: center;
+    padding: 10%;
+}
+.intro-logo img{
+    width: 150px;
+    height: 150px;
+}
+.intro-logo .svg{
+    animation: fill 10s ease forwards 0.1s;
+}
+.intro-logo #svg {
+    stroke-dasharray: 1832.4107666015625;
+    stroke-dashoffset: 1832.4107666015625;
+    animation: animate 10s ease forwards;
+}
+@keyframes animate{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #1b1b1b;
+    }
+}
