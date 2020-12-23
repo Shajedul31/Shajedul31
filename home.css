@@ -47,7 +47,7 @@
 .intro-logo #svg {
     stroke-dasharray: 1832.4107666015625;
     stroke-dashoffset: 1832.4107666015625;
-    animation: animate 10s ease forwards;
+    animation: animate 20s ease forwards;
 }
 @keyframes animate{
     to{
@@ -62,3 +62,9 @@
         fill: #1b1b1b;
     }
 }
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }

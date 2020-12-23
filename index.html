@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M&S</title>
 </head>
-<body onload="loadFunction()">
+<body onload="loadFunction()" class="preload">
     <div id="contain">
         <div class="mid">
             <div class="rot-big"></div>
@@ -26,6 +26,9 @@
         function loadFunction(){
             preloader.style.visibility = 'hidden';
         }
+        $(window).load(function() {
+        $("body").removeClass("preload");
+});
     </script>
     <nav class="clearfix">
         <div class="logo"><a href="home.html"><img src="favicon.ico" alt="M&S"></a></div>
