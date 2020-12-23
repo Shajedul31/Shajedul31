@@ -214,3 +214,16 @@ footer .dev{
 footer div .col a:hover{
     color: #E52926;
 }
+
+.txt-type > .txt {
+    border-right: 0.2rem solid rgb(135, 233, 233);
+    animation: blinkTextCursor 500ms infinite normal;
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgb(135, 233, 233);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
