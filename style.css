@@ -202,6 +202,10 @@ footer div .col{
 footer div .col ul{
     list-style: none;
 }
+footer div .col i{
+    font-size: 25px;
+    padding-left: 20px;
+}
 footer div .col a{
     text-decoration: underline;
     color: cyan;
@@ -214,6 +218,7 @@ footer .dev{
 footer div .col a:hover{
     color: #E52926;
 }
+
 
 .txt-type > .txt {
     border-right: 0.2rem solid rgb(135, 233, 233);
